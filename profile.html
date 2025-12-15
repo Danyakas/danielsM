@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeenPlanner — Profils</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="profile">
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <a href="index.html" style="text-decoration:none;color:inherit"><div class="logo">TP</div></a>
+        <div>
+          <div class="title">Profils</div>
+          <div class="small">Pieslēdzies vai izveido segvārdu</div>
+        </div>
+      </div>
+      <div><div class="small">Punkti: <strong class="points">0</strong></div></div>
+    </header>
+
+    <div class="content">
+      <div class="card" id="login-wrap">
+        <h4>Pieslēgšanās / Reģistrācija</h4>
+        <form id="login-form" style="display:flex;gap:8px;margin-top:8px">
+          <input id="nick" class="input" placeholder="Ievadi segvārdu (nick)" required>
+          <button class="btn">Pieslēgties</button>
+        </form>
+        <div class="small" style="margin-top:8px">Segvārds saglabās datus lokāli. Ja segvārds ir jauns — izveidosim jaunu kontu.</div>
+      </div>
+
+      <div class="card hidden" id="user-wrap" style="display:block">
+        <h4>Manis profils</h4>
+        <div class="small">Segvārds: <span id="user-nick">-</span></div>
+        <div style="margin-top:8px;display:flex;gap:8px">
+          <button id="change-nick" class="btn ghost">Mainīt segvārdu</button>
+          <button id="reset-data" class="btn ghost">Atjaunot datus</button>
+          <button id="btn-logout" class="btn ghost">Izlogoties</button>
+        </div>
+
+        <div style="margin-top:12px">
+          <h4>Sasniegumi</h4>
+          <div id="ach-list" class="ach-grid"></div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h4>Tēma</h4>
+          <div class="small">Pārslēdz starp gaišo un tumšo tēmu</div>
+          <div style="margin-top:8px">
+            <button id="theme-toggle" class="btn">Pārslēgt tēmu</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="author-info"></div>
+
+      <div class="footer small card">
+        <div><strong>Autors:</strong> Daniels Mironovs — 12b, Rīgas Ostvalda Vidusskola</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

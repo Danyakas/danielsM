@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeenPlanner — Uzdevumi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="tasks">
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <a href="index.html" style="text-decoration:none;color:inherit"><div class="logo">TP</div></a>
+        <div>
+          <div class="title">Uzdevumi</div>
+          <div class="small">Pievieno, atzīmē, saņem punktus</div>
+        </div>
+      </div>
+      <div>
+        <div class="small">Punkti: <strong class="points">0</strong></div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="card">
+        <form id="task-form" style="display:flex;gap:8px;align-items:center">
+          <input id="task-title" class="input" placeholder="Uzdevuma nosaukums" required>
+          <input id="task-due" class="input" type="date" style="max-width:130px">
+          <button class="btn">Pievienot</button>
+        </form>
+        <div class="small" style="margin-top:8px">Par izpildi +5 punkti. Par fokusa sesiju +10 punkti.</div>
+      </div>
+
+      <div class="card">
+        <h4>Mani uzdevumi</h4>
+        <div id="tasks-list" class="tasks-list"></div>
+      </div>
+
+      <div class="card">
+        <h4>Sasniegumi</h4>
+        <div id="ach-list" class="ach-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeenPlanner — Kalendārs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="calendar">
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <a href="index.html" style="text-decoration:none;color:inherit"><div class="logo">TP</div></a>
+        <div>
+          <div class="title">Kalendārs</div>
+          <div class="small">Pievieno notikumus pēc datuma</div>
+        </div>
+      </div>
+      <div><div class="small">Punkti: <strong class="points">0</strong></div></div>
+    </header>
+
+    <div class="content">
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px">
+        <button id="cal-prev" class="btn ghost">◀ Iepr.</button>
+        <button id="cal-next" class="btn ghost">Nāk.</button>
+        <div style="flex:1;text-align:right" class="small">Nospied dienu, lai pievienotu notikumu</div>
+      </div>
+
+      <div id="calendar-root" class="card"></div>
+
+      <div class="card small">
+        <div><strong>Padoms:</strong> Lieto profilu, lai saglabātu datus sev.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

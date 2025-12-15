@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeenPlanner — Sākums</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">TP</div>
+        <div>
+          <div class="title">TeenPlanner</div>
+          <div class="small">Plāno mācības un brīvo laiku</div>
+        </div>
+      </div>
+      <div class="small" id="logged-user">Nav pieslēgts</div>
+    </header>
+
+    <div class="content">
+      <div class="card">
+        <h3>Sadaļas</h3>
+        <div class="menu-grid" style="margin-top:10px">
+          <a href="tasks.html" class="menu-btn">
+            <h3>Uzdevumi</h3>
+            <p>Izveido un atzīmē izpildītos uzdevumus</p>
+          </a>
+
+          <a href="calendar.html" class="menu-btn">
+            <h3>Kalendārs</h3>
+            <p>Pievieno notikumus datumos</p>
+          </a>
+
+          <a href="focus.html" class="menu-btn">
+            <h3>Fokuss</h3>
+            <p>Pomodoro taimeris un fokusa sesijas</p>
+          </a>
+
+          <a href="shop.html" class="menu-btn">
+            <h3>Veikals</h3>
+            <p>Izmanto punktus, lai iegādātos efektus</p>
+          </a>
+
+          <a href="profile.html" class="menu-btn">
+            <h3>Profils</h3>
+            <p>Pieslēdzies, izvēlies segvārdu un pārskati sasniegumus</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="small">Kopējie punkti</div>
+            <div style="font-weight:700;font-size:18px"><span class="points">0</span></div>
+          </div>
+          <div>
+            <button class="btn" onclick="location.href='tasks.html'">Atvērt Uzdevumus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer small card">
+        <div><strong>Autors:</strong> Daniels Mironovs — 12b, Rīgas Ostvalda vidusskola</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

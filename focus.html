@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeenPlanner — Fokuss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="focus">
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <a href="index.html" style="text-decoration:none;color:inherit"><div class="logo">TP</div></a>
+        <div>
+          <div class="title">Fokuss</div>
+          <div class="small">Pomodoro taimeris</div>
+        </div>
+      </div>
+      <div><div class="small">Punkti: <strong class="points">0</strong></div></div>
+    </header>
+
+    <div class="content">
+      <div class="card timer" id="timer-root">
+        <div class="time-big" id="time-display">25:00</div>
+        <div class="timer-controls">
+          <button id="timer-start" class="btn">Start</button>
+          <button id="timer-pause" class="btn ghost">Pauze</button>
+          <button id="timer-reset" class="btn ghost">Atjaunot</button>
+        </div>
+        <div class="small">Pabeidzot sesiju, saņem +10 punktus. Pēc 3 sesijām atbloķē sasniegumu.</div>
+      </div>
+
+      <div class="card">
+        <h4>Sasniegumi</h4>
+        <div id="ach-list" class="ach-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
